@@ -39,7 +39,7 @@ class SendEmail:
             msg['Subject']  = "Test Email with Attachment"
 
             msg.attach(MIMEText(email_message, 'html'))
-
+ 
             server = smtplib.SMTP(self.host, self.port)
             
             for ind_file in attachment_lst:
